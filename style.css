@@ -1,0 +1,534 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:Arial,Tahoma,sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}.my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0}.my-logo__pic{border:0;vertical-align:middle;width:50px;height:50px}body{margin:0;padding:0;font:1em/1.4em sans-serif;color:#353535}
+/*Copyright www.Master-CSS.com*/.my-logo{position:fixed;bottom:0;left:0;margin:0;padding:0;}.my-logo__pic{border:0;vertical-align:middle;width:50px;height:50px;}
+
+body{
+  font: 1em/1.6em "Roboto", Arial, Tahoma, sans-serif;
+  color: #353535;
+}
+
+.mid{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+/*фоны на сайте*/
+
+.blackfon{
+    background: url(images/blackfon.png);
+}
+
+.crownfon{
+    background: url(images/crownfon.png);
+}
+
+.grayfon{
+    background: url(images/grayfon.png);
+}
+
+/*Общие классы*/
+
+.header__disc, .header__name, .sub__zag, .timer__header, .content__header, .content__zak, .anons__zag, .anons__num, .sell__zag, .sell_button{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #111;
+    }
+
+.header__disc, .header__name, .sell__zag{
+    text-shadow: 1px 1px 3px #222;
+    margin: 40px 0;
+}
+
+.box__img, .sell__img{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*Стили шапки*/
+.header__top{
+    padding: 1px 0;
+}
+
+.header__name{
+    font-size: 90px;
+    line-height: 90px;
+    text-align: right;
+    margin-bottom: 200px;
+    padding: 0 130px 0 0;
+}
+
+.header__disc{
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+}
+
+.box, .sub{
+  width: 50%;  
+}
+
+.sub__border-form{
+    border: 5px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 1px 1px 3px #222;
+    margin-top: -160px;
+}
+
+.sub__border-form_footer{
+    margin-top: 0px;
+}
+
+.sub__form{
+    background: #ffcc00;
+    padding: 40px;
+}
+
+.sub__zag{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.sub__mail, .sub__submit{
+    font-weight: 300;
+    width: 100%;
+    padding: 15px 0;
+    transition: .5s;
+}
+
+.sub__p{
+    text-align: center;
+    color: #111;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.sub__mail{
+    font-size: 20px;
+    outline: 0;
+    line-height: 20px;
+    text-indent: 20px;
+    border: 1px solid transparent;
+}
+
+.sub__mail:focus{
+    border: 1px solid #ffcc00;
+    box-shadow: 0 0 7px #886600;
+    
+}
+.sub__submit{
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    background: #b50000;
+    line-height: 30px;
+    text-shadow: 1px 1px 3px #700000;
+    box-shadow: 1px 1px 3px #bb8800;
+}
+
+.sub__submit:hover{
+/*    -webkit-animation: puzo linear .5s infinite;
+    animation: puzo linear .5s infinite;
+*/
+    background: #1f81a9;
+    text-shadow: 1px 1px 3px #145b78;
+    box-shadow: 0 0 3px #8d6702;
+}
+/*
+@-webkit-keyframes puzo {
+    0% {-webkit-transform: scale(1);transform: scale(1);}
+    50% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+
+@keyframes puzo {
+    0% {-webkit-transform: scale(1);transform: scale(1);}
+    50% {-webkit-transform: scale(1.1);transform: scale(1.1);}
+    100% {-webkit-transform: scale(1);transform: scale(1);}
+}
+*/
+.box__img{
+    margin-top: -240px;
+}
+
+.box__img_footer{
+    margin-top: 0;
+    width: auto;
+}
+
+/* Стили таймера*/
+
+.timer{
+    text-align: center;
+    margin: 40px 0;
+}
+
+.timer__header{
+    font-size: 20px;
+    margin: 0px 0 20px;
+    font-weight: 500;
+}
+
+
+/*Блоки контента*/
+
+.content{
+   padding: 0 0 80px 0;
+}
+
+.content__header{
+    font-size: 44px;
+    background: #ffc000;
+    line-height: 44px;
+    padding: 28px;
+    margin: 0 0 80px 0;
+}
+
+.content__zak{
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+/*Блоки анонсов*/
+
+.anons{
+    width: 44%;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.anons:nth-child(even){
+    float: right;
+}
+
+.anons:nth-child(odd){
+    float: left;
+}
+
+.anons__fon{
+    background: #fff;
+    height: 230px;
+    overflow: hidden;
+}
+
+.anons__number{
+    width: 20%;
+    height: 220px;
+}
+
+.anons__num{
+    width: 60px;
+    height: 60px;
+    background: #ffc000;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 82px auto 0;
+    font-size: 44px;
+    line-height: 60px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.anons__ico{
+    height: 100%;
+    background: no-repeat center;
+    background-size: 65%;
+    transition: .5s;
+}
+
+.ico1{
+    background-image: url(images/rocket.svg);
+}
+
+.ico2{
+    background-image: url(images/glove.svg);
+}
+
+.ico3{
+    background-image: url(images/lightning.svg);
+}
+
+.ico4{
+    background-image: url(images/bookmark.svg);
+}
+
+.ico5{
+    background-image: url(images/sword.svg);
+}
+
+.ico6{
+    background-image: url(images/diamond.svg);
+}
+
+.anons:hover .anons__ico{
+    background-size: 75%;
+}
+
+.anons:hover .anons__num{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    box-shadow: 0 0 3px #bbb;
+}
+
+.anons__nbor{
+    border: 1px solid #bbb;
+    border-right: none;
+    height: 227px;
+    padding-top: 1px;
+}
+
+
+.anons__content{
+    width: 80%;
+    position: relative;
+    height: 230px;
+}
+
+.anons__text{
+    padding: 40px 40px 0 40px;
+    height: 188px;
+    border: 1px solid #bbb;
+}
+
+.anons__zag{
+    text-align: left;
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 26px;
+}
+
+.anons__p{
+    font-size: 17px;
+}
+
+.anons__img{
+    position: absolute;
+    top: 220px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.anons:hover .anons__img{
+    top: 0;
+    opacity: 0.9;
+}
+
+
+.anons__pic{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+
+
+/*Блок Забрать систему*/
+
+.sell{
+    padding: 40px 0 0;
+}
+
+.sell__box{
+    width: 40%;
+}
+
+.sell__text{
+    width: 60%;
+}
+
+.sell__zag{
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+}
+
+.sell__a{
+    text-align: center;
+    margin: 50px 0;
+}
+
+.sell_button{
+    text-decoration: none;
+    background: #d7d7d7;
+    padding: 10px 20px;
+    font-size: 30px;
+    line-height: 30px;
+    box-shadow: 2px 2px 5px #222;
+    border-radius: 3px;
+    transition: .5s;
+}
+
+.sell_button:hover{
+    background: #ffc000;
+}
+
+/* Кружочки */
+
+.circle{
+    width: 228px;
+    height: 228px;
+    background: #fff;
+    border: 3px double #bbb;
+    border-radius: 50%;
+    transition: .3s;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    margin: 20px;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+.circle:hover{
+    border: 3px solid #777;
+    box-shadow: 0 0 0 4px #999;
+    background: #fdffc4;
+}
+/*
+.circle:first-child{
+    margin-left: 0;
+}
+
+.circle:last-child{
+    margin-right: 0;
+}
+*/
+.circle__step1, .circle__step2, .circle__step3, .circle__step4, .circle__step5{
+    padding: 120px 30px 0 30px;
+    background: url(/images/mail.png) no-repeat center 40px;
+}
+
+.circle__step2{
+    background-image: url(images/check.png);
+}
+
+.circle__step3{
+    background-image: url(images/reply.png);
+}
+
+.circle__step4{
+    background-image: url(images/archive.png);
+}
+
+.circle__step5{
+    background-image: url(images/flag.png);
+}
+
+
+/* Меню на сайте*/
+
+.menu{
+    background: rgba(0, 0, 0, 0.7);
+    transition: background .5s;
+    width: 100%;
+    z-index: 999;
+}
+
+.default{
+    position: absolute;
+    display: none;
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+}
+
+.menu:hover{
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.menu__ul{
+    list-style: none;
+    margin: 0;
+    padding: 0 0 0 20px;
+    text-align: center;
+    background: url(images/favicon/apple-touch-icon.png) no-repeat left center;
+}
+
+.menu__li{
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 20px;
+    text-shadow: 1px 1px 2px #000;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.menu__a{
+    text-decoration: none;
+    color: #bbb;
+    transition: .5s;
+}
+
+.menu__a:hover{
+    color: #fff;
+}
+
+.active .menu__a{
+    color: #fff;
+    text-shadow: 0 0 7px #fff;
+}
+
+
+
+/*Общие стили*/
+
+/*
+.right, .left{
+    width: 50%;
+}
+*/
+.right {
+    float: right;
+}
+
+.left{
+    float: left;
+}
+
+.tac{
+    text-align: center;
+}
+
+.clearfix:before, .clearfix:after{
+    content: " ";
+    display: table;
+}
+
+.clearfix:after{
+    clear: both;
+}
+
+.orange{
+    color: #ff8a00;
+}
+
+.yellow{
+    color: #ffc000;
+}
+
+.white{
+    color: #fff;
+}
+
+
+.shadow-light{
+    text-shadow: 1px 1px 2px #ccc;
+}
+
+.shadow-dark{
+    text-shadow: 1px 1px 2px #222;
+}
+
+.boxshadow-light{
+    box-shadow: 1px 1px 3px #eee;
+}
+
+.boxshadow-mid{
+    box-shadow: 1px 1px 3px #ccc;
+}
