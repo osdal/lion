@@ -474,35 +474,91 @@ body{
     text-shadow: 0 0 7px #fff;
 }
 
+.slicknav_menu{
+    display: none;
+    position: fixed;
+    width: 100%;
+    background: #4c4c4c url(images/favicon/apple-touch-icon.png) no-repeat 20px center;
+}
+
 /* Адаптивный дизайн */
 
 @media screen and (max-width: 1024px){
    .mid{
-        margin: 0 20px auto;
-        }
-}
+        margin: 0 20px;
+       }
+    }
 
-@media screen and (max-width: 972px){
+
+@media screen and (max-width: 1110px){
    .anons{
-        width: 47%;
+        width: 40%;
         }
-}
+    }
+@media screen and (max-width: 1044px){
+   .anons{
+        width: 43%;
+        }
+    }
 
-@media screen and (max-width: 954px){
+@media screen and (max-width: 1010px){
    .anons{
         width: 70%;
         }
-}
-
-.box__img{
+    .anons:nth-child(even), .anons:nth-child(odd){
+        float: none;
+        margin: 0 auto 80px;
+        }
+    .anons__img{
+        width: 100%;
+    }
+    .box__img{
     margin-top: -200px;
-}
-
-
+        }    
     .box__img_footer{
-        width: 95%;
+         width: 95%;
          margin-top: 0;
         }
+}
+
+
+@media screen and (max-width: 850px){
+    .sell__box{
+        display: none;
+    }
+    .sell__text{
+        width: 100%;
+        align-content: center;
+    }
+     .box.left, .sub.right{
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .box__img{
+    margin-top: 0;
+    }
+    .header__name{
+        text-align: center;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .menu__ul{
+        display: none;
+        background: none;
+        font-size: 18px;
+    }
+    .slicknav_menu{
+        display: block;
+        z-index: 10000;
+    }
+    
+}
+
+
+
 
 /*Общие стили*/
 
