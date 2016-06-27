@@ -474,7 +474,35 @@ body{
     text-shadow: 0 0 7px #fff;
 }
 
+/* Адаптивный дизайн */
 
+@media screen and (max-width: 1024px){
+   .mid{
+        margin: 0 20px auto;
+        }
+}
+
+@media screen and (max-width: 972px){
+   .anons{
+        width: 47%;
+        }
+}
+
+@media screen and (max-width: 954px){
+   .anons{
+        width: 70%;
+        }
+}
+
+.box__img{
+    margin-top: -200px;
+}
+
+
+    .box__img_footer{
+        width: 95%;
+         margin-top: 0;
+        }
 
 /*Общие стили*/
 
