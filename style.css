@@ -559,8 +559,16 @@ body{
         margin-top: 60px;
     }
     
-}@media screen and (max-width: 720px){
+}
+
+@media screen and (max-width: 720px){
     .sub.right, .anons{
+        width: 90%;
+    }   
+}
+
+@media screen and (max-width: 600px){
+     .box.left{
         width: 90%;
     }   
 }
