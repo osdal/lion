@@ -559,7 +559,13 @@ body{
         margin-top: 60px;
     }
     
+}@media screen and (max-width: 720px){
+    .sub.right, .anons{
+        width: 90%;
+    }   
 }
+
+
 
 
 
