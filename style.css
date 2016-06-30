@@ -542,6 +542,9 @@ body{
         text-align: center;
         padding: 0;
     }
+    .header__disc{
+        margin-top: 60px;
+    }
 }
 
 @media screen and (max-width: 780px){
