@@ -542,9 +542,7 @@ body{
         text-align: center;
         padding: 0;
     }
-    .header__disc{
-        margin-top: 60px;
-    }
+    
 }
 
 @media screen and (max-width: 780px){
@@ -556,6 +554,9 @@ body{
     .slicknav_menu{
         display: block;
         z-index: 10000;
+    }
+    .header__disc{
+        margin-top: 60px;
     }
     
 }
